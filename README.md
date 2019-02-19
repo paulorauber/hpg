@@ -1,6 +1,6 @@
 # Hindsight policy gradients
 
-This software supplements the paper ["Hindsight policy gradients"](https://openreview.net/forum?id=Bkg2viA5FQ).
+This software supplements the paper ["Hindsight policy gradients"](https://arxiv.org/abs/1711.06006).
 
 The implementation focuses on clarity and flexibility rather than computational efficiency.
 
