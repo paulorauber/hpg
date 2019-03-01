@@ -48,10 +48,10 @@ def create_combinations(g):
 
 
 def main():
-    e_config = ExpConfig('flipbit_8', 9, 3000, 2, 100, 128, 5)
+    e_config = ExpConfig('flipbit_8', 9, 3000, 2, 100, 128, 1)
 
     g_config =\
-        ParamConfig(seed=[1],
+        ParamConfig(seed=[1, 2, 3, 4, 5],
                     policy_hidden_layers=[[16, 16], [64, 64], [256, 256]],
                     policy_learning_rate=[1e-1, 5e-2, 1e-2, 5e-3, 1e-3, 5e-4,
                                           1e-4, 5e-5],

@@ -67,8 +67,9 @@ def config():
     eval_freq = 100
     eval_size = 128
 
-    n_restarts = 2
-
+    # Results in the paper are obtained using multiple seeds with `n_restarts = 1`.
+    n_restarts = 1 # Warning: initial policy parameters will be the same across restarts, even if `seed = None` (sacred 0.7.4).
+    
 
 @ex.automain
 def main(seed, env_name, max_steps, use_hindsight, per_decision, weighted,
