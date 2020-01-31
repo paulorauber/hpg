@@ -1,0 +1,20 @@
+{
+    "environment" : "MsPacman",
+    "environment_parameters": {},
+    
+    "agent" : "HindsightPolicyGradient",
+    "agent_parameters": {"hidden_layers" : [256, 256, 256],
+                         "learning_rate" : FIXME,
+                         "baseline_parameters": {},
+                         "subgoals_per_episode": 3,
+                         "use_vscaling_init": true,
+                         "use_gpu": true,
+                         "seed" : 1
+                         },
+    
+    "training_parameters": {"n_batches" : 12500,
+                            "batch_size" : 16,
+                            "eval_freq" : 125,
+                            "eval_size" : 240
+                            }
+}

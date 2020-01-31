@@ -1,0 +1,20 @@
+{
+    "environment" : "FetchPush",
+    "environment_parameters": {},
+    
+    "agent" : "HindsightPolicyGradient",
+    "agent_parameters": {"hidden_layers" : [256, 256, 256],
+                         "learning_rate" : FIXME,
+                         "baseline_parameters": {},
+                         "subgoals_per_episode": 0,
+                         "use_vscaling_init": true,
+                         "use_gpu": false,
+                         "seed" : 1
+                         },
+    
+    "training_parameters": {"n_batches" : 40000,
+                            "batch_size" : 2,
+                            "eval_freq" : 400,
+                            "eval_size" : 512
+                            }
+}

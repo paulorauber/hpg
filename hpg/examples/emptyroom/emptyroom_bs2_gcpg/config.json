@@ -1,0 +1,19 @@
+{
+    "environment" : "EmptyRoom",
+    "environment_parameters": {"h": 11, "w": 11, "max_steps": 32},
+    
+    "agent" : "GoalConditionalPolicyGradient",
+    "agent_parameters": {"hidden_layers" : [256, 256],
+                         "learning_rate" : FIXME,
+                         "baseline_parameters": {},
+                         "use_vscaling_init": false,
+                         "use_gpu": false,
+                         "seed" : 1
+                         },
+    
+    "training_parameters": {"n_batches" : 2200,
+                            "batch_size" : 2,
+                            "eval_freq" : 22,
+                            "eval_size" : 256
+                            }
+}

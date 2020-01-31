@@ -1,0 +1,22 @@
+{
+    "environment" : "FlipBit",
+    "environment_parameters": {"n_bits": 8, "max_steps": 9},
+    
+    "agent" : "HindsightActorHindsightCritic",
+    "agent_parameters": {"hidden_layers" : [256, 256],
+                         "learning_rate" : FIXME,
+                         "baseline_parameters": {"hidden_layers" : [256, 256],
+                                                 "learning_rate" : FIXME,
+                                                 "use_vscaling_init": false},
+                         "subgoals_per_episode": 0,
+                         "use_vscaling_init": false,
+                         "use_gpu": false,
+                         "seed" : 1
+                         },
+    
+    "training_parameters": {"n_batches" : 1400,
+                            "batch_size" : 16,
+                            "eval_freq" : 14,
+                            "eval_size" : 256
+                            }
+}

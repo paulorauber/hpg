@@ -1,0 +1,22 @@
+{
+    "environment" : "EmptyRoom",
+    "environment_parameters": {"h": 11, "w": 11, "max_steps": 32},
+    
+    "agent" : "HindsightPolicyGradient",
+    "agent_parameters": {"hidden_layers" : [256, 256],
+                         "learning_rate" : FIXME,
+                         "baseline_parameters": {"hidden_layers" : [256, 256],
+                                                 "learning_rate" : FIXME,
+                                                 "use_vscaling_init": false},
+                         "subgoals_per_episode": 0,
+                         "use_vscaling_init": false,
+                         "use_gpu": false,
+                         "seed" : 1
+                         },
+    
+    "training_parameters": {"n_batches" : 200,
+                            "batch_size" : 16,
+                            "eval_freq" : 2,
+                            "eval_size" : 256
+                            }
+}

@@ -1,6 +1,0 @@
-.spyproject
-hpg/__pycache__/
-hpg/environments/__pycache__/
-results/
-hpg/experiments/__pycache__/
-.spyderproject

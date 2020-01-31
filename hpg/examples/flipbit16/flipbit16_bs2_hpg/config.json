@@ -1,0 +1,20 @@
+{
+    "environment" : "FlipBit",
+    "environment_parameters": {"n_bits": 16, "max_steps": 17},
+    
+    "agent" : "HindsightPolicyGradient",
+    "agent_parameters": {"hidden_layers" : [256, 256],
+                         "learning_rate" : FIXME,
+                         "baseline_parameters": {},
+                         "subgoals_per_episode": 0,
+                         "use_vscaling_init": false,
+                         "use_gpu": false,
+                         "seed" : 1
+                         },
+    
+    "training_parameters": {"n_batches" : 15000,
+                            "batch_size" : 2,
+                            "eval_freq" : 150,
+                            "eval_size" : 256
+                            }
+}

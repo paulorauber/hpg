@@ -1,0 +1,19 @@
+{
+    "environment" : "FlipBit",
+    "environment_parameters": {"n_bits": 16, "max_steps": 17},
+    
+    "agent" : "GoalConditionalPolicyGradient",
+    "agent_parameters": {"hidden_layers" : [256, 256],
+                         "learning_rate" : FIXME,
+                         "baseline_parameters": {},
+                         "use_vscaling_init": false,
+                         "use_gpu": false,
+                         "seed" : 1
+                         },
+    
+    "training_parameters": {"n_batches" : 1000,
+                            "batch_size" : 16,
+                            "eval_freq" : 10,
+                            "eval_size" : 256
+                            }
+}
